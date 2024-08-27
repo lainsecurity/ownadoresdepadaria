@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'EuclidCircularb';
+    src: url('fonts/EuclidCircularB-Bold-WebXL.woff2') format('truetype');
+}
+
+.active{
+    color: #912828;
+}
+
+body{
+    background-color: rgb(8 8 8);
+    font-family: 'EuclidCircularb', sans-serif;
+}
+
+nav{
+    width: 100%;
+}
+
+.nav-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: cair 1s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.nav-logo{
+    color: #fff;
+    font-style: italic;
+    margin-left: 3em;
+}
+
+.nav-logo h1{
+    font-family: sans-serif;
+}
+
+.nav-links{
+    margin-right: 2em;
+    transition: all 0.3s ease;
+}
+
+.nav-links:hover{
+    scale: 1.1;
+}
+
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.nav-links ul li{
+    list-style: none;
+}
+
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.nav-links ul li a:hover{
+    color: #912828;
+}
+
+.nav-button{
+    margin-right: 3em;
+    margin-bottom: 10px;
+}
+
+.nav-button button{
+    width: 5em;
+    height: 2em;
+    background-color: #912828;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'EuclidCircularb' !important;
+    transition: all 0.3s ease;
+}
+
+.nav-button button:hover{
+    scale: 1.1;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.about-image img{
+    width: 550px;
+    height: 450px;
+    animation: aparecer 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.about-description{
+    text-align: center;
+    width: 100%;
+    margin-right: 10em;
+}
+
+.about-description h1{
+    color: #912828;
+    font-size: 40px;
+    animation: aparecer 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.about-description p{
+    color: #fffdfd;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.members-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.member-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+    height: 23em;
+    border-radius: 20px;
+    box-shadow: 2px 3px 8px#000;
+    transition: all 0.5s ease;
+    animation: aparecer 1s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.member-card:hover{
+    scale: 1.1;
+}
+
+.member-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.member-foto img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 1px solid#202020;
+    border: 2px solid;
+}
+
+.member-nome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1em;
+    margin-top: 1em;
+}
+
+.member-nome h1{
+    color: #fff;
+}
+
+.member-description{
+    margin-top: 2em;
+    text-align: center;
+    height: 100%;
+    background-color: #161616;
+    border-radius: 20px;
+}
+
+.member-description p{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    width: 18em;
+    padding: 5px 19px 7px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links{
+        display: none;
+    }
+    .nav-logo{
+        margin-left: 1em;
+    }
+    .nav-button{
+        margin-right: 1em;
+    }
+    .about-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-description{
+        margin-right: 0;
+    }
+    .about-description h1{
+        height: fit-content;
+    }
+    .about-image img{
+        width: 400px;
+        height: 300px;
+    }
+    .members-container{
+        flex-direction: column;
+    }
+    .member-card{
+        width: 90%;
+    }
+    .member-description p{
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 400;
+        width: 18em;
+        padding: 5px 19px 7px;
+    }
+  }
+
+  @keyframes cair {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
