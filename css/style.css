@@ -140,8 +140,11 @@ nav{
     scale: 1.1;
 }
 
-.hamburger {
+.hamburger-button{
     display: none;
+}
+
+.hamburger {
     cursor: pointer;
     padding: 10px;
     border: none;
@@ -377,8 +380,10 @@ nav{
         right: 20%;
     }
     .hamburger{
-        display: block;
         margin-right: 1em;
+    }
+    .hamburger-button{
+        display: block;
     }
   }
 
