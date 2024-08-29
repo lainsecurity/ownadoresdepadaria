@@ -141,7 +141,7 @@ nav{
 }
 
 .hamburger {
-    display: inline-block;
+    display: none;
     cursor: pointer;
     padding: 10px;
     border: none;
@@ -377,6 +377,7 @@ nav{
         right: 20%;
     }
     .hamburger{
+        display: block;
         margin-right: 1em;
     }
   }
