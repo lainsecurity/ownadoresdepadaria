@@ -7,6 +7,7 @@
     <title>Membros</title>
 </head>
 <body>
+    <audio id="myAudio" src="assets/audios/musica2.mp3" autoplay></audio>
     <nav>
         <div class="nav-items">
             <div class="nav-logo">
@@ -14,17 +15,38 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li class="nav-link"><a href="index.html">Cyberlab</a></li>
-                    <li class="nav-link active"><a href="membros.html">Membros</a></li>
+                    <li class="nav-link active"><a href="#">Cyberlab</a></li>
+                    <li class="nav-link"><a href="membros.html">Membros</a></li>
                     <li class="nav-link"><a href="#">Formulario</a></li>
                 </ul>
             </div>
             <div class="nav-button">
                 <a href="https://discord.gg/DxxYv8M5XU"><button>Entrar</button></a>
             </div>
+            <div class="hamburger-button">
+                <button class="hamburger" id="hamburger-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+            </div>
         </div>
     </nav>
     <div class="page-content">
+        <div class="dropdown-menu" id="dropdown-menu">
+            <div class="dropdown-menu-items">
+                <div class="dropdown-menu-links">
+                    <ul>
+                        <li class="dropdown-link"><a href="#">Cyberlab</a></li>
+                        <li class="dropdown-link"><a href="membros.html">Membros</a></li>
+                        <li class="dropdown-link"><a href="#">Formulario</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-menu-button">
+                    <a href="https://discord.gg/DxxYv8M5XU"><button>Entrar</button></a>
+                </div>
+            </div>
+        </div>
         <div class="members-container">
             <div class="member-card">
                 <div class="member-foto">
@@ -94,5 +116,7 @@
             </div>
         </div>
     </div>
+    <script src="js/music.js"></script>
+    <script src="js/dropdown-menu.js"></script>
 </body>
 </html>

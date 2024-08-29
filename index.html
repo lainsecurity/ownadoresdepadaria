@@ -7,6 +7,7 @@
     <title>Cyberlab</title>
 </head>
 <body>
+    <audio src="assets/audios/music.mp3" id="index-song"></audio>
     <nav>
         <div class="nav-items">
             <div class="nav-logo">
@@ -22,9 +23,30 @@
             <div class="nav-button">
                 <a href="https://discord.gg/DxxYv8M5XU"><button>Entrar</button></a>
             </div>
+            <div class="hamburger-button">
+                <button class="hamburger" id="hamburger-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+            </div>
         </div>
     </nav>
     <div class="page-content">
+        <div class="dropdown-menu" id="dropdown-menu">
+            <div class="dropdown-menu-items">
+                <div class="dropdown-menu-links">
+                    <ul>
+                        <li class="dropdown-link"><a href="#">Cyberlab</a></li>
+                        <li class="dropdown-link"><a href="membros.html">Membros</a></li>
+                        <li class="dropdown-link"><a href="#">Formulario</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-menu-button">
+                    <a href="https://discord.gg/DxxYv8M5XU"><button>Entrar</button></a>
+                </div>
+            </div>
+        </div>
         <div class="about-container">
             <div class="about-image">
                 <img src="assets/lain.gif" alt="Lain" draggable="false">
@@ -39,5 +61,16 @@
             </div>
         </div>
     </div>
+    <div class="cookies" id="cookie-div">
+        <div class="cookie-text">
+            <h1>Permita os cookies para ter uma melhor experiencia no site.</h1>
+        </div>
+        <div class="cookie-button">
+            <button id="aceitar-cookie">aceitar cookies</button>
+            <button>negar cookies</button>
+        </div>
+    </div>
+    <script src="js/cookies.js"></script>
+    <script src="js/dropdown-menu.js"></script>
 </body>
 </html>
