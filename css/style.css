@@ -3,6 +3,23 @@
     src: url('fonts/EuclidCircularB-Bold-WebXL.woff2') format('truetype');
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px
+}
+
+::-webkit-scrollbar-track {
+    background: #222
+}
+
+::-webkit-scrollbar-thumb {
+    background: #912828;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #521717;
+}
+
 .active{
     color: #912828;
 }
